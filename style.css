@@ -84,7 +84,7 @@
 .case-reverse .case-visual{order:2}
 .case-reverse .case-copy{order:1}
 .case-image{position:relative;overflow:hidden;border:1px solid rgba(255,255,255,.12);border-radius:28px;background:#111;min-height:360px;box-shadow:0 28px 80px rgba(0,0,0,.28)}
-.case-image img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;transition:transform .7s cubic-bezier(.2,.8,.2,1),filter .5s ease}
+.case-image img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:contain;transition:transform .7s cubic-bezier(.2,.8,.2,1),filter .5s ease}
 .case:hover .case-image img{transform:scale(1.035);filter:saturate(1.06)}
 .case-overlay{position:absolute;left:18px;right:18px;bottom:18px;display:flex;align-items:center;gap:12px;padding:13px 16px;border:1px solid rgba(255,255,255,.14);border-radius:16px;background:rgba(7,7,7,.76);backdrop-filter:blur(14px);color:#fff}
 .case-overlay span{font-family:'DM Mono',monospace;color:#c8ff3d;font-size:.78rem}.case-overlay b{font-size:.88rem;letter-spacing:.08em}.case-overlay em{margin-left:auto;color:#bbb;font-style:normal;font-size:.78rem}
