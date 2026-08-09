@@ -1,10 +1,11 @@
-UBIKA PORTFOLIO V5.1 — ROCKSTAR EDITION + CASE STUDY ARCHIVE
+UBIKA PORTFOLIO V5 — ROCKSTAR EDITION
 
-V5.1 keeps the V5 dark editorial / acid-lime visual identity and adds three case studies from the supplied project board:
-- Bloom Café — mobile app UI/UX design
-- Travelia — travel website UI/UX design
-- FinWise — finance dashboard UI/UX design
+V5 keeps the V4 dark editorial / acid-lime visual identity but fixes the readability problem:
+- Important body copy increased to comfortable reading sizes.
+- Location, process, education, experience, project metadata, toolkit, email and phone are easier to notice.
+- Decorative labels remain intentionally small so hierarchy is preserved.
+- Added stronger hover depth, subtle pulse graphics, elevated project card, more expressive process cards, and a more interactive CTA.
+- Mobile typography is explicitly protected from becoming microtext.
+- Existing supplied photos and Gmail CTAs are preserved.
 
-The case-study board is split into three presentation images for responsive display, with project descriptions, platforms, tools and tags matching the supplied reference.
-
-The portfolio remains a static HTML/CSS/JS site and can be deployed through GitHub Pages.
+This is a static HTML/CSS/JS portfolio package.

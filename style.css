@@ -77,43 +77,18 @@
   .hero:after{display:none}
 }
 
-/* ===== V5.1 CASE STUDY ARCHIVE ===== */
-.case-study-head{display:grid;grid-template-columns:1.25fr .75fr;gap:50px;align-items:end;margin:130px 0 48px;border-top:1px solid #ffffff14;padding-top:26px}
-.case-study-head>div>span{font:500 10px "DM Mono";letter-spacing:.18em;color:var(--acid)}
-.case-study-head h3{font-size:clamp(34px,5vw,70px);line-height:.95;letter-spacing:-.05em;margin:14px 0 0;max-width:800px}
-.case-study-head h3 em{font-family:"Playfair Display",serif;font-weight:500;color:#b9bcb4}
-.case-study-head p{font-size:15px;line-height:1.8;color:#9da19a;max-width:390px;justify-self:end}
-.case-study-stack{display:flex;flex-direction:column;gap:30px}
-.archive-card{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(300px,.65fr);background:#0d0f0f;border:1px solid #ffffff12;overflow:hidden;min-height:350px;transition:transform .45s,border-color .45s,box-shadow .45s}
-.archive-card:hover{transform:translateY(-7px);border-color:#c8ff2855;box-shadow:0 30px 80px #0008}
-.archive-card-reverse{grid-template-columns:minmax(300px,.65fr) minmax(0,1.65fr)}
-.archive-card-reverse .archive-image{order:2}
-.archive-card-reverse .archive-copy{order:1}
-.archive-image{position:relative;overflow:hidden;background:#171817;min-height:350px}
-.archive-image img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .7s cubic-bezier(.2,.7,.2,1);filter:saturate(.96)}
-.archive-card:hover .archive-image img{transform:scale(1.035)}
-.archive-index{position:absolute;top:18px;left:18px;width:42px;height:42px;display:grid;place-items:center;border:1px solid #090a0acc;background:#f4f4ed;color:#090a0a;font:500 11px "DM Mono";z-index:2}
-.archive-copy{padding:42px 42px 36px;display:flex;flex-direction:column;justify-content:center}
-.archive-kicker{font:500 10px "DM Mono";letter-spacing:.14em;color:#c8ff28;margin-bottom:14px}
-.archive-copy h4{font-size:clamp(36px,4vw,62px);line-height:.9;letter-spacing:-.05em;margin:0 0 18px}
-.archive-copy h4 em{font-family:"Playfair Display",serif;font-weight:500;color:#b9bcb4}
-.archive-copy p{font-size:15px;line-height:1.75;color:#a7aaa3;max-width:440px;margin:0 0 22px}
-.archive-meta{display:flex;gap:22px;flex-wrap:wrap;margin-bottom:22px}
-.archive-meta span{font:500 11px "DM Mono";color:#ecece5}
-.archive-meta span:before{content:"↗";color:#c8ff28;margin-right:7px}
-.archive-tags{display:flex;gap:8px;flex-wrap:wrap}
-.archive-tags span{font:500 10px "DM Mono";padding:7px 9px;border:1px solid #ffffff20;color:#aeb2a9}
-@media(max-width:850px){
-  .case-study-head{grid-template-columns:1fr;gap:18px;margin-top:90px}
-  .case-study-head p{justify-self:start}
-  .archive-card,.archive-card-reverse{grid-template-columns:1fr}
-  .archive-card-reverse .archive-image,.archive-card-reverse .archive-copy{order:initial}
-  .archive-image{min-height:unset;aspect-ratio:1536/410}
-  .archive-copy{padding:32px 26px}
-}
-@media(max-width:560px){
-  .case-study-head h3{font-size:36px}
-  .archive-image{aspect-ratio:1.9/1}
-  .archive-copy h4{font-size:42px}
-  .archive-copy p{font-size:14px}
-}
+/* CASE STUDIES V6 — three-project showcase */
+.case-list{display:grid;gap:8rem;margin-top:5rem}
+.case{position:relative;display:grid;grid-template-columns:minmax(0,1.45fr) minmax(300px,.75fr);gap:3.5rem;align-items:center}
+.case-reverse{grid-template-columns:minmax(300px,.75fr) minmax(0,1.45fr)}
+.case-reverse .case-visual{order:2}
+.case-reverse .case-copy{order:1}
+.case-image{position:relative;overflow:hidden;border:1px solid rgba(255,255,255,.12);border-radius:28px;background:#111;min-height:360px;box-shadow:0 28px 80px rgba(0,0,0,.28)}
+.case-image img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;transition:transform .7s cubic-bezier(.2,.8,.2,1),filter .5s ease}
+.case:hover .case-image img{transform:scale(1.035);filter:saturate(1.06)}
+.case-overlay{position:absolute;left:18px;right:18px;bottom:18px;display:flex;align-items:center;gap:12px;padding:13px 16px;border:1px solid rgba(255,255,255,.14);border-radius:16px;background:rgba(7,7,7,.76);backdrop-filter:blur(14px);color:#fff}
+.case-overlay span{font-family:'DM Mono',monospace;color:#c8ff3d;font-size:.78rem}.case-overlay b{font-size:.88rem;letter-spacing:.08em}.case-overlay em{margin-left:auto;color:#bbb;font-style:normal;font-size:.78rem}
+.case-copy{padding:1rem 0}.case-copy .number{font-family:'DM Mono',monospace;font-size:.72rem;letter-spacing:.14em;color:#a8a8a8;margin-bottom:1.2rem}.case-copy h3{font-size:clamp(3rem,5vw,5.5rem);line-height:.84;margin:0 0 1.5rem;letter-spacing:-.055em}.case-copy h3 em{font-family:'Playfair Display',serif;color:#c8ff3d;font-weight:500}.case-copy>p{font-size:1rem;line-height:1.8;color:#bcbcbc;max-width:520px}.case-copy .meta-grid{margin:2rem 0;display:grid;grid-template-columns:1fr 1fr;gap:1.15rem 1.5rem}.case-copy .meta-grid small{display:block;font-family:'DM Mono',monospace;color:#777;font-size:.64rem;letter-spacing:.14em;margin-bottom:.35rem}.case-copy .meta-grid b{font-size:.84rem;color:#eee}.case-copy .tags{display:flex;flex-wrap:wrap;gap:.5rem}.case-copy .tags span{border:1px solid rgba(255,255,255,.15);border-radius:999px;padding:.55rem .75rem;font-size:.68rem;color:#c8c8c8}.case-copy .case-link{display:inline-flex;gap:.7rem;align-items:center;margin-top:1.7rem;color:#c8ff3d;text-decoration:none;font-weight:700;font-size:.82rem}.case-copy .case-link b{transition:transform .25s ease}.case-copy .case-link:hover b{transform:translate(4px,-4px)}
+.work-note{display:none}
+@media(max-width:900px){.case,.case-reverse{grid-template-columns:1fr;gap:2rem}.case-reverse .case-visual,.case-reverse .case-copy{order:initial}.case-list{gap:5rem}.case-image{min-height:0}.case-overlay em{display:none}}
+@media(max-width:600px){.case-list{margin-top:3rem;gap:4rem}.case-image{border-radius:20px}.case-overlay{left:10px;right:10px;bottom:10px;padding:10px 12px}.case-copy h3{font-size:3.3rem}.case-copy .meta-grid{gap:1rem}.case-copy>p{font-size:.92rem}.case-copy .tags span{font-size:.62rem}}
